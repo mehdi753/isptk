@@ -1,0 +1,25 @@
+<div class="one-news">
+    <div class="header">
+        <h2>{{this.news.title}}</h2>
+        <div class="breadcrumbs">
+            <a routerLink="/" class="first bc">Accueil</a>
+            <a routerLink="/" class="bc">Actualité</a>
+            <a [routerLink]="['/newsfeed/',this.news._id]" class="bc">{{this.news.title}}</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="desc">
+            {{this.news.content}}
+        </div>
+        <div class="time">
+            <p>{{this.news.dateTime}}</p>
+        </div>
+        <div class="divider"></div>
+        <div class="links">
+            <h5>Pièces jointes:</h5>
+            <ul>
+                <li *ngFor="let link of links">{{this.link}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.page-footer .contactIcons {
+    color: #fff;
+    margin: 20px;
+}
+
+.page-footer .creditIcons {
+    color: #fff;
+}
+
+.page-footer.icons {
+    margin-top: 50px;
+}
+
+.page-footer .list {
+    margin-left: 10px;
+}
+
+.fpart {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+#arsii_logo {
+    width: 90%;
+    height: 100px;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.page-footer .footer-copyright .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.page-footer .footer-copyright .container>* {
+    margin: 0 15px;
+}
+
+.page-footer .footer-copyright .container div a {
+    margin: 0 15px;
+}

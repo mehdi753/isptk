@@ -1,0 +1,64 @@
+.contact {
+    width: 100%;
+}
+
+.contact .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact .content .form-cont,
+.contact .content .location {
+    width: 45%;
+    margin: 25px 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns button {
+    margin: 0;
+}
+
+.contact .content .location agm-map {
+    height: 250px;
+}
+
+.contact .content .location .desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact .content .location .desc .loc,
+.contact .content .location .desc .cont {
+    width: 50%;
+    margin: 50px 0 0 0;
+}
+
+.contact .content .location .desc .loc p,
+.contact .content .location .desc .cont p {
+    width: 90%;
+}
+
+@media (max-width:992px) {
+    .contact .content {
+        width: 100%;
+        display: unset;
+    }
+    .contact .content .form-cont,
+    .contact .content .location {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width:600px) {
+    .contact .content .form-cont,
+    .contact .content .location {
+        width: 100%;
+    }
+}

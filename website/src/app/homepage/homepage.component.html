@@ -1,0 +1,192 @@
+<div class="home-page" id="home-page">
+    <div class="welcome-area">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="../../assets/images/cover.jpg">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/images/cover.jpg">
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/images/cover.jpg">
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="../../assets/images/cover.jpg">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/images/cover.jpg">
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="newsfeed">
+            <h2>Actualité</h2>
+            <div class="div-div"></div>
+            <app-newsfeed></app-newsfeed>
+        </div>
+        <div class="desc">
+            <h2>Mot du directeur</h2>
+            <div class="div-div"></div>
+            <div class="cont">
+                <div class="hexagon">
+                    <div class="hexagon-inner">
+                        <div class="hexagon-inner-in"></div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        <div class="numbers">
+            <h2><span class="ispt">ISPT</span> En Chiffres</h2>
+            <div class="div-div"></div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="../../assets/images/cover.jpg">
+                    <div class="controws">
+                        <div class="row ">
+                            <div class="col s12 m12 ">
+                                <div class="card transparent">
+                                    <div class="card-content center">
+                                        <fa-icon [icon]="faUserTie" class="nbicon" size="4x"></fa-icon>
+                                        <h3 class="white-text" [countUp]="myNb1" snInViewport (inViewportChange)="onInViewportChange1($event)">0</h3>
+                                        <span class="card-title white-text">Nombre du Personnel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col s12 m12 ">
+                                <div class="card transparent">
+                                    <div class="card-content center">
+                                        <fa-icon [icon]="faChalkboardTeacher" class="nbicon" size="4x"></fa-icon>
+                                        <h3 class="white-text" [countUp]="myNb2" snInViewport (inViewportChange)="onInViewportChange2($event)">0</h3>
+                                        <span class="card-title white-text">Nombre de Formateur</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col s12 m12 ">
+                                <div class="card transparent">
+                                    <div class="card-content center">
+                                        <fa-icon [icon]="faBook" class="nbicon" size="4x"></fa-icon>
+                                        <h3 class="white-text" [countUp]="myNb3" snInViewport (inViewportChange)="onInViewportChange3($event)">0</h3>
+                                        <span class="card-title white-text">Capacité de Formation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col s12 m12 ">
+                                <div class="card transparent">
+                                    <div class="card-content center">
+                                        <fa-icon [icon]="faHotel" class="nbicon" size="4x"></fa-icon>
+                                        <h3 class="white-text" [countUp]="myNb4" snInViewport (inViewportChange)="onInViewportChange4($event)">0</h3>
+                                        <span class="card-title white-text">Capacité d'hébergement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specialties">
+            <h2> Les Spécialités</h2>
+            <div class="div-div"></div>
+            <div class="cont">
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="ctent">
+                            <fa-icon [icon]="faConciergeBell" class="spicon" size="5x"></fa-icon>
+                            <h4>Cuisine</h4>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="ctent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat veritatis suscipit blanditiis expedita doloribus aperiam perspiciatis.</p>
+                            <a href="#">Voir Suite...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="ctent">
+                            <fa-icon [icon]="faUtensils" class="spicon" size="5x"></fa-icon>
+                            <h4>Restaurant</h4>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="ctent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat veritatis suscipit blanditiis expedita doloribus aperiam perspiciatis.</p>
+                            <a href="#">Voir Suite...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="ctent">
+                            <fa-icon [icon]="faBirthdayCake" class="spicon" size="5x"></fa-icon>
+                            <h4>Pâtisserie</h4>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="ctent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat veritatis suscipit blanditiis expedita doloribus aperiam perspiciatis.</p>
+                            <a href="#">Voir Suite...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="ctent">
+                            <fa-icon [icon]="faMap" class="spicon" size="5x"></fa-icon>
+                            <h4>Guidage</h4>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="ctent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat veritatis suscipit blanditiis expedita doloribus aperiam perspiciatis.</p>
+                            <a href="#">Voir Suite...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="ctent">
+                            <fa-icon [icon]="faHotel" class="spicon" size="5x"></fa-icon>
+                            <h4>Hébergement</h4>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="ctent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat veritatis suscipit blanditiis expedita doloribus aperiam perspiciatis.</p>
+                            <a href="#">Voir Suite...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

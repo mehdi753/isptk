@@ -1,0 +1,26 @@
+<div class="space container">
+    <div class="header">
+        <h2>Espace</h2>
+        <div class="breadcrumbs">
+            <a routerLink="/" class="first bc">Accueil</a>
+            <a routerLink="/" class="bc">A propos</a>
+            <a routerLink="/about/space" class="bc">Espace</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="carousel">
+            <span class="carousel-item" *ngFor="let img of gallery">
+                <img src="{{img.url}}" class="gallerie">
+            </span>
+        </div>
+        <div class="show">
+            <div class="grid">
+                <div class="row">
+                    <div class="column" *ngFor="let column of show">
+                        <img *ngFor="let img of column" class="materialboxed" src="{{img.url}}" style="width:100%; height:200px" attr.data-caption={{img.caption}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

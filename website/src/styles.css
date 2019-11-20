@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #eee
+}
+
+.ispt {
+    font-weight: 800;
+    letter-spacing: .1in;
+    font-size: 50px;
+    font-family: 'Playfair Display SC', cursive;
+    text-transform: uppercase;
+}
+
+.div-div {
+    width: 150px;
+    height: 2px;
+    margin: 15px auto;
+    background: #ee6e73;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.header .breadcrumbs .bc {
+    color: #777;
+}
+
+.header .breadcrumbs .bc:hover {
+    color: #333;
+}
+
+.bc:not(.first)::before {
+    content: '\E5CC';
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+    font-family: 'Material Icons';
+    color: #333;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 10px 0 8px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header h2 {
+    margin: 10px 0 0 10px;
+}
+
+.header .breadcrumbs {
+    text-align: right;
+    margin: 0 10px;
+}
+
+@media(max-width:700px) {
+    .header .breadcrumbs,
+    .header h2 {
+        text-align: center;
+    }
+}
+
+.Main-Page-Container {
+    min-height: calc(100vh - 350px);
+}

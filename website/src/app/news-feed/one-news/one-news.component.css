@@ -1,0 +1,33 @@
+.one-news .header h2 {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.content .desc,
+.one-news .content .links {
+    font-size: 1.3em;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.one-news .content .links ul li {
+    list-style-type: circle;
+    margin-left: 35px;
+}
+
+.one-news .content .time {
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media(max-width:600px) {
+    .one-news .content .desc,
+    .one-news .content .links {
+        font-size: 1.1em;
+        width: 95%;
+    }
+    .one-news .content .links ul li {
+        list-style-type: circle;
+        margin-left: 35px;
+    }
+}

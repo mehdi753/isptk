@@ -1,0 +1,67 @@
+<ul class="sidenav" id="mobile-demo">
+    <li><a routerLink="/">Acceuil</a></li>
+    <li><a class="dropdown-trigger" href="#!" data-target="propos2">A propos<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" data-target="formation2">Formation<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" data-target="partenaire2">Partenaires<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" data-target="condidature2">Condidature<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" data-target="offre2">Offres<i class="material-icons right">arrow_drop_down</i></a>
+    </li>
+
+</ul>
+<div class="navbar-fixed" id="navbar">
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo ispt" routerLink="/">ISPT</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" routerLink="/">Acceuil</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="propos1">A propos<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="formation1">Formation<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="partenaire1">Partenaires<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="condidature1">Condidature<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="offre1">Offres<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul class="dropdown-content" *ngFor="let d of dropdowns" [attr.id]="'formation' + d.id">
+    <li><a routerLink="/education/initial">Initiale</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/education/continuous">Continue</a></li>
+</ul>
+<ul class="dropdown-content" *ngFor="let d of dropdowns" [attr.id]="'partenaire' + d.id">
+    <li><a routerLink="/partnaires/national">Nationaux</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/partnaires/abroad">Etranger</a></li>
+</ul>
+<ul class="dropdown-content" *ngFor="let d of dropdowns" [attr.id]="'condidature' + d.id">
+    <li><a routerLink="/applications/conditions">Conditions</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/applications/registration">Préinscription</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/applications/contests">Concours</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/applications/results">Résultats</a></li>
+</ul>
+<ul class="dropdown-content" *ngFor="let d of dropdowns" [attr.id]="'offre' + d.id">
+    <li><a routerLink="/offers/internships">Stage</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/offers/jobs">Emplois</a></li>
+</ul>
+<ul class="dropdown-content" *ngFor="let d of dropdowns" [attr.id]="'propos' + d.id">
+    <li><a routerLink="/about/events">Evenement</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/about/space">Espace</a></li>
+    <li class="divider "></li>
+    <li><a routerLink="/about/contact">Contact</a></li>
+</ul>

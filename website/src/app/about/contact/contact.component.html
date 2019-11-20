@@ -1,0 +1,93 @@
+<div class="contact container">
+    <div class="header">
+        <h2>Contact</h2>
+        <div class="breadcrumbs">
+            <a routerLink="/" class="first bc">Accueil</a>
+            <a routerLink="/" class="bc">A propos</a>
+            <a routerLink="/about/contact" class="bc">Contact</a>
+        </div>
+    </div>
+    <div class="content">
+        <form class="form-cont" autocomplete="off" [formGroup]="contactFormControl">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input [class.invalid]="!contactFormControl.controls['nameFormControl'].valid && contactFormControl.controls['nameFormControl'].touched" [class.valid]="contactFormControl.controls['nameFormControl'].valid && contactFormControl.controls['nameFormControl'].touched"
+                        id="first_name" type="text" formControlName="nameFormControl">
+                    <label for="first_name">Nom</label>
+                    <span class="helper-text" *ngIf="hasError('nameFormControl','pattern')" data-error="S'il vous plaît entrer un nom valide"></span>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input [class.invalid]="!contactFormControl.controls['fnameFormControl'].valid && contactFormControl.controls['fnameFormControl'].touched" [class.valid]="contactFormControl.controls['fnameFormControl'].valid && contactFormControl.controls['fnameFormControl'].touched"
+                        id="last_name" type="text" formControlName="fnameFormControl">
+                    <label for="last_name">Prénom</label>
+                    <span class="helper-text" *ngIf="hasError('fnameFormControl','pattern')" data-error="S'il vous plaît entrer un prénom valide"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input [class.invalid]="!contactFormControl.controls['emailFormControl'].valid && contactFormControl.controls['emailFormControl'].touched" [class.valid]="contactFormControl.controls['emailFormControl'].valid && contactFormControl.controls['emailFormControl'].touched"
+                        id="email" type="email" formControlName="emailFormControl">
+                    <label for="email">Email</label>
+                    <span class="helper-text" *ngIf="hasError('emailFormControl','email')" data-error="S'il vous plaît entrer un email valide"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">local_phone</i>
+                    <input [class.invalid]="!contactFormControl.controls['phoneFormControl'].valid && contactFormControl.controls['phoneFormControl'].touched" [class.valid]="contactFormControl.controls['phoneFormControl'].valid && contactFormControl.controls['phoneFormControl'].touched"
+                        id="icon_telephone" type="tel" formControlName="phoneFormControl">
+                    <label for="icon_telephone">Telephone</label>
+                    <span class="helper-text" *ngIf="hasError('phoneFormControl','pattern')" data-error="S'il vous plaît entrer un numéro valide"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">comment</i>
+                    <textarea [class.invalid]="!contactFormControl.controls['msgFormControl'].valid && contactFormControl.controls['msgFormControl'].touched" [class.valid]="contactFormControl.controls['msgFormControl'].valid && contactFormControl.controls['msgFormControl'].touched"
+                        id="textarea2" class="materialize-textarea" data-length="120" formControlName="msgFormControl" formControlName="msgFormControl"></textarea>
+                    <label for="textarea2">message</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 btns">
+                    <button class="btn waves-effect waves-light red col s4" type="reset" name="action">Annuler
+                            <i class="material-icons right">close</i>
+                    </button>
+                    <button class="btn waves-effect waves-light col s4" (click)="onSubmitSend()" type="submit" name="action">Envoyer
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="location">
+            <agm-map [latitude]="map.lat" [longitude]="map.lng">
+                <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
+            </agm-map>
+            <div class="desc">
+                <div class="loc row">
+                    <i class="material-icons col l1 s1">location_on</i>
+                    <p class="text-lighten-4 col l7 s11">
+                        Institut Supérieur Professionnel de Tourisme BP.31 - 4089 ELKantaoui Sousse
+                    </p>
+                </div>
+                <div class="cont row">
+                    <i class="material-icons col l1 s1">phone</i>
+                    <div class="col l7 s11">
+                        <p class="text-lighten-4 ">
+                            +216 73 348 922
+                        </p>
+                        <p class="text-lighten-4 ">
+                            +216 73 348 923
+                        </p>
+                        <p class="text-lighten-4 ">
+                            +216 73 348 925
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

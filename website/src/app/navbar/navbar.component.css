@@ -1,0 +1,13 @@
+.nav-wrapper .brand-logo {
+    margin-left: 3%;
+}
+
+.nav-wrapper ul {
+    margin-right: 3%;
+}
+
+@media(max-width:992px) {
+    .nav-wrapper .brand-logo {
+        margin-left: 0px;
+    }
+}

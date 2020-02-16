@@ -79,7 +79,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDo3LAX2UOpWYcG5FXCJrFiSLLXaJpFaus'
+      apiKey: ''
     })
   ],
   
